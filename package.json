@@ -1,8 +1,7 @@
 {
   "name": "tweeter",
   "version": "1.0.0",
-  "description":
-    "A twitter clone by Lighthouse Labs for web bootcamp students to learn front-end dev skillz",
+  "description": "A twitter clone by Lighthouse Labs for web bootcamp students to learn front-end dev skillz",
   "main": "server/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -15,6 +14,7 @@
     "body-parser": "^1.15.2",
     "chance": "^1.0.2",
     "express": "^4.13.4",
+    "jquery": "^3.2.1",
     "md5": "^2.1.0"
   },
   "devDependencies": {
