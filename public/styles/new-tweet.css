@@ -9,6 +9,11 @@
   padding-left: 10px;
   padding-right: 10px;
 }
+.new-tweet-error {
+  color: red;
+  padding-left: 4em;
+  margin-bottom: 12px;
+}
 
 .new-tweet h2 {
   border-bottom: 1px solid #000000;
