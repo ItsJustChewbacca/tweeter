@@ -62,4 +62,12 @@ $(document).ready(function() {
     div.appendChild(document.createTextNode(str));
     return div.innerHTML;
   }
+
+  $(".compose-button").click(function() {
+    if ($(".new-tweet").is(":hidden")) {
+      $(".new-tweet").slideDown("fast");
+    } else {
+      $(".new-tweet").slideUp("fast");
+    }
+  });
 });
