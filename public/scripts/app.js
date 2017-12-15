@@ -50,7 +50,7 @@ $(document).ready(function() {
               <p class="comment">${escape(tweet.content.text)} </p>
             </div>
             <footer class="date">
-              <p>${escape(tweet.created_at)}</p>
+              <p>${escape(moment(tweet.created_at).format("llll"))}</p>
             </footer>
           </article>
     `;
