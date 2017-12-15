@@ -37,3 +37,7 @@ body {
   margin-right: auto;
   padding-top: 140px;
 }
+
+.hidden {
+  display: none;
+}
