@@ -1,11 +1,9 @@
 .new-tweet {
   position: relative;
-  background-color: lightgrey;
+  background-color: #F6F6F6;
   border-radius: 10px;
-  border-color: lightgrey;
-  margin-left: 2em;
-  margin-right: 2em;
-  border-style: groove;
+  border-style: solid;
+  border-color: aliceblue;
   padding-left: 10px;
   padding-right: 10px;
 }
@@ -13,17 +11,6 @@
   color: red;
   padding-left: 4em;
   margin-bottom: 12px;
-}
-.compose-button {
-  position: inherit;
-  right: 0;
-  margin-right: 100px;
-  margin-top: 8px;
-  background-color: ghostwhite;
-  border: black;
-  width: 120px;
-  height: 60px;
-  font-size: larger;
 }
 
 .new-tweet h2 {
@@ -48,71 +35,127 @@
   left: 10px;
   bottom: 0;
   margin-bottom: 10px;
+  background-color:aliceblue;
+}
+
+.new-tweet input:hover {
+  color:white;
 }
 
 .new-tweet textarea {
-  min-width: 360px;
-  max-width: 360px;
+  width:100%;
   margin-bottom: 35px;
   margin-top: -15px;
   padding-left: 5px;
   padding-top: 5px;
 }
 
-#unknown {
-  background-color: lightgrey;
-  border-radius: 10px;
-  position: relative;
-  padding-left: 2em;
-  padding-right: 2em;
-  margin-left: 30px;
-  margin-right: 30px;
-}
-
-#unknown .chief {
+#tweet-article .chief {
   height: 60px;
-  margin-top: 10px;
   position: absolute;
   left: 0;
-  top: 0;
+  top: 14px;
   background-color: black;
   border-radius: 20px;
-  border-style: groove;
   margin-left: 5px;
   width: 75px;
 }
 
-#unknown .header {
+#tweet-article .header {
   background-color: whitesmoke;
-  border-radius: 10px;
-  border-bottom-right-radius: 0px;
-  border-bottom-left-radius: 0px;
-  margin-left: -30px;
-  width: 387px;
   height: 85px;
+  padding: 20px;
 }
 
 .name {
-  margin-left: 90px;
-  padding-top: 1em;
+  margin-left: 75px;
+  margin-bottom:0px;
+  margin-top:1px;
 }
 
 .handle {
   margin-left: 290px;
-  margin-top: -40px;
+  margin-top: -22px;
 }
 
 .comment-section {
   background-color: white;
-  /* width: 200px; */
-  margin-right: -32px;
-  margin-left: -32px;
   height: 100px;
-  margin-top: -20px;
+  padding:20px;
+
 }
 
 .date {
   font-size: 10px;
-  margin-left: -30px;
+  background-color:lightgrey;
+  padding:15px;
+  position:relative;
 }
+
+.date p {
+  margin: 0;
+  font-style: oblique;
+  font-family: sans-serif;
+  position:absolute;
+}
+
+.new-tweets {
+  margin:20px 0;
+  position:relative;
+  border-radius:10px;
+  border-style:solid;
+  border-color:black;
+  overflow:hidden;
+}
+
+.new-tweets:hover {
+  border-color:white;
+}
+
+.fa-flag {
+  right: 60px;
+  position: absolute;
+  color:red;
+}
+
+.fa-retweet {
+  right:40px;
+  position:absolute;
+  color:red;
+}
+
+.fa-heart {
+  right:20px;
+  position:absolute;
+  color:red;
+}
+
+.fa-flag:hover {
+  right: 60px;
+  bottom:3px;
+  position: absolute;
+  color:aliceblue;
+  font-size: 15px;
+  opacity:1;
+}
+
+.fa-retweet:hover {
+  right:40px;
+  bottom:3px;
+  position:absolute;
+  color:aliceblue;
+  font-size:15px;
+  opacity:1;
+}
+
+.fa-heart:hover {
+  right:20px;
+  bottom:3px;
+  color:aliceblue;
+  position:absolute;
+  font-size:15px;
+  opacity:1;
+}
+
+
 
