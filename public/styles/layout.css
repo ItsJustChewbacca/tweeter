@@ -27,17 +27,30 @@ body {
  */
 body {
   font-family: "Roboto Condensed", sans-serif;
+  background-color:inherit;
 }
 
 .container {
-  background-color: white;
+  background-color: #2B2B2B;
   width: 450px;
-  height: 100vh;
+  height: 100%;
   margin-left: auto;
   margin-right: auto;
-  padding-top: 140px;
+  padding:140px 20px 20px;
 }
 
 .hidden {
   display: none;
+}
+
+.fa.fa-flag.hidden {
+  display: none;
+}
+
+.fa.fa-retweet.hidden {
+  display:none;
+}
+
+.fa.fa-heart.hidden {
+  display:none;
 }
