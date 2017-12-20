@@ -1,7 +1,7 @@
 const MAX_CHARACTERS = 140;
 
 $(document).ready(function() {
-  $(".new-tweet textarea").on("keyup", function() {
+  $(".new-tweet textarea").on("input", function() {
     // grab the value inside of the textarea
     const text = $(this).val();
     // length of string
@@ -22,7 +22,6 @@ $(document).ready(function() {
 
     $(".counter").toggleClass("counter-error", textRemainder < 0);
     $(".new-tweet input").prop("disabled", textRemainder < 0);
-
-    //
   });
 });
+
