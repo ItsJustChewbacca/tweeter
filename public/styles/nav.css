@@ -1,5 +1,5 @@
 #nav-bar {
-  background-color: #00a087;
+  background-color: #F6F6F6;
   font-color: #e8fdff;
   height: 80px;
   width: 100%;
@@ -18,6 +18,29 @@
   font-size: 40px;
   position: fixed;
   line-height: 2;
-  color: #e8fdff;
+  color: #2B2B2B;
   margin-left: 10px;
 }
+
+#nav-bar .compose-button {
+  position: inherit;
+  right: 0;
+  margin-right: 100px;
+  margin-top: 8px;
+  background-color: #F6F6F6;
+  border-color: black;
+  border-width: 2px;
+  width: 120px;
+  height: 60px;
+  font-size: larger;
+}
+
+#nav-bar .fa {
+  margin-left:10px;
+}
+
+#nav-bar .compose-button:hover {
+  background-color: aliceblue;
+  color: black;
+}
+
