@@ -29,14 +29,16 @@ $(document).ready(function() {
 
   function renderTweets(tweets) {
     // loops through tweets
-    $("#unknown").empty();
+    $("#tweet-article").empty();
     for (var tweet of tweets) {
-      $("#unknown").prepend(createTweetEl(tweet));
+      $("#tweet-article").prepend(createTweetEl(tweet));
     }
     // calls createTweetElement for each tweet
 
     // takes return value and appends it to the tweets container
   }
+
+
 
   function createTweetEl(tweet) {
     let $tweet = `
@@ -51,6 +53,9 @@ $(document).ready(function() {
             </div>
             <footer class="date">
               <p>${escape(moment(tweet.created_at).format("llll"))}</p>
+              <i class="fa fa-flag hidden" class= aria-hidden="true"></i>
+              <i class="fa fa-retweet hidden" aria-hidden="true"></i>
+              <i class="fa fa-heart hidden" aria-hidden="true"></i>
             </footer>
           </article>
     `;
@@ -65,9 +70,16 @@ $(document).ready(function() {
 
   $(".compose-button").click(function() {
     if ($(".new-tweet").is(":hidden")) {
-      $(".new-tweet").slideDown("fast");
+      $(".new-tweet").slideDown("fast") && $(".textarea").focus();
     } else {
       $(".new-tweet").slideUp("fast");
     }
+  });
+
+  $("#tweet-article").mouseenter(function() {
+    $("i").removeClass("hidden");
+    $("#tweet-article").mouseleave(function() {
+      $("i").addClass("hidden");
+    });
   });
 });
