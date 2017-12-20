@@ -23,3 +23,9 @@ Tweeter is a simple, single-page Twitter clone.
  *devDependencies*
   -nodemon: ^1.9.2
 
+###Final Product
+
+!["Main page"](https://github.com/ItsJustChewbacca/tweeter/blob/master/docs/mainpage.png)
+!["Main page with empty compose message"](https://github.com/ItsJustChewbacca/tweeter/blob/master/docs/tweetempty.png)
+!["Main page with compose form hidden"](https://github.com/ItsJustChewbacca/tweeter/blob/master/docs/hiddencompose.png)
+
